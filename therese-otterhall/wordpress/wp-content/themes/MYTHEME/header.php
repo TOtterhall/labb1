@@ -2,10 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<title><?php wp_title()?></title>
-	<link <?php get_template_directory_uri().'/assets/css/fontawesome.css'?>/>
-	<link <?php get_template_directory_uri().'/assets/css/bootstrap.css'?>/>
-	<link <?php get_template_directory_uri().'/style.css'?>/>
+
 	
 	
 <?php
@@ -26,9 +23,7 @@ wp_head();
 					<div class="col-sm-6 hidden-xs">
 						<form id="searchform" class="searchform">
 							<div>
-								<label class="screen-reader-text">Sök efter:</label>
-								<input type="text" />
-								<input type="submit" value="Sök" />
+							<?php get_search_form();?>
 							</div>
 						</form>
 					</div>
@@ -36,6 +31,7 @@ wp_head();
 						<div class="mobile-menu-wrap">
 							<i class="fa fa-search"></i>
 							<i class="fa fa-bars menu-icon"></i>
+							
 						</div>
 					</div>
 				</div>

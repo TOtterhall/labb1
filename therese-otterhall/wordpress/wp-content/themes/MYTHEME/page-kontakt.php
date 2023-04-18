@@ -4,31 +4,14 @@ get_header();
 
 
 
-<main>
-			<section>
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-8 col-md-6">
-							<h1><?php the_title();?></h1>
-							<p><?php the_content();?></p>
-							
-						</div>
-						<div class="col-xs-12 col-sm-4 col-md-6">
-							<img <?php the_post_thumbnail_url();?> />
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
 		<main>
 			<section>
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-8 col-md-offset-2">
-							<h1><?php wp_title("");?></h1>
+							<h1><?php the_title();?></h1>
 							<form>
-								<?php the_content(""); ?>
+								<?php the_content(); ?>
 							</form>
 						</div>
 					</div>

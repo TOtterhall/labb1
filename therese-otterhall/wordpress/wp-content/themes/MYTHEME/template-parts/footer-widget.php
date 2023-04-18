@@ -4,12 +4,12 @@
 
     <div class="col-xs-12 col-sm-6 col-md-4">
 
-    <?php dynamic_sidebar('footer_widget_1'); ?>
+    <?php dynamic_sidebar('Footer Widget 1'); ?>
 
      </div>
 
      <div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-1">
-<?php dynamic_sidebar('footer-sidebar-2'); ?>
+<?php dynamic_sidebar('Footer Widget 2'); ?>
 
 </div>
 
@@ -17,7 +17,7 @@
 
  <ul class="social">
 
-<?php dynamic_sidebar('footer-sidebar-3'); ?>
+<?php dynamic_sidebar('Footer Widget 3'); ?>
 
 </ul>
 
@@ -29,7 +29,7 @@
 
     <div class="col-xs-12">
 
-    <?php dynamic_sidebar('footer_area_four'); ?>
+    <?php echo "Copyright © TO, 2023" ?>
 
     </div>
 
