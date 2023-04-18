@@ -4,7 +4,7 @@ get_header();
 
 
 
-<main>
+		<main>
 			<section>
 				<div class="container">
 					<div class="row">
@@ -19,9 +19,9 @@ get_header();
 					wp_nav_menu(
 						array(
 							"menu" => "undersidor",
-							"container" => "::before",
+							"container" => "",
 							"theme_location" => "undersidor",
-							"items_wrap"=>'<ul id="" class="menu">%3$s</ul>'
+							"items_wrap"=>'<ul id="" class="side-menu">%3$s</ul>'
 						)
 					);
 					?>

@@ -9,24 +9,22 @@ get_header();
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9 col-md-push-3">
-							<h1><?php the_title() ?>;</h1>
-							<p><?php the_content() ?>;</p>
+							<h1><?php the_title() ;?></h1>
+							<p><?php the_content(); ?></p>
 							
 						</div>
 						<aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
 							<ul class="side-menu">
-								<li>
-									<a href="undersida.html">Undersida</a>
-								</li>
-								<li>
-									<a href="undersida2.html">Undersida 2</a>
-								</li>
-								<li>
-									<a href="undersida3.html">Undersida 3</a>
-								</li>
-								<li>
-									<a href="undersida4.html">Undersida 4</a>
-								</li>
+							<?php
+					wp_nav_menu(
+						array(
+							"menu" => "undersidor",
+							"container" => "",
+							"theme_location" => "undersidor",
+							"items_wrap"=>'<ul id="" class="side-menu">%3$s</ul>'
+						)
+					);
+					?>
 							</ul>
 						</aside>
 					</div>
